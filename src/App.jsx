@@ -17,12 +17,26 @@ function Navbar({ setPage, NAV_LINKS }) {
   );
 }
 
+function HomePage() {
+  return (
+    <div>
+      <h1>Welcome to Lumière Salon</h1>
+      <p>Premium hair and beauty services</p>
+    </div>
+  );
+}
+
 export default function App() {
   const [page, setPage] = useState("Home");
 
   return (
     <div>
       <Navbar setPage={setPage} NAV_LINKS={NAV_LINKS} />
+      <main>
+        {page === "Home" && <HomePage />}
+      </main>
+      
     </div>
+    
   );
 }
