@@ -33,6 +33,15 @@ function HomePage() {
   );
 }
 
+function ServicesPage() {
+  return (
+    <div>
+      <h1>Our Services</h1>
+      <p>Explore what we offer</p>
+    </div>
+  );
+}
+
 export default function App() {
   const [page, setPage] = useState("Home");
 
