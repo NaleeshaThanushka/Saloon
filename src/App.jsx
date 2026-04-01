@@ -36,14 +36,13 @@ function HomePage() {
 export default function App() {
   const [page, setPage] = useState("Home");
 
-  return (
-    <div>
-      <Navbar setPage={setPage} NAV_LINKS={NAV_LINKS} />
-      <main>
-        {page === "Home" && <HomePage />}
-      </main>
-      
-    </div>
-    
-  );
+return (
+  <div style={{ padding: "20px", fontFamily: "Arial" }}>
+    <Navbar setPage={setPage} NAV_LINKS={NAV_LINKS} />
+
+    <main>
+      {page === "Home" && <HomePage />}
+    </main>
+  </div>
+);
 }
