@@ -51,6 +51,7 @@ return (
 
     <main>
       {page === "Home" && <HomePage />}
+      {page === "Services" && <ServicesPage />}
     </main>
   </div>
 );
