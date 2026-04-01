@@ -22,6 +22,9 @@ function HomePage() {
     <div>
       <h1>Welcome to Lumière Salon</h1>
       <p>Premium hair and beauty services</p>
+      <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+        Book via WhatsApp
+      </a>
     </div>
   );
 }
