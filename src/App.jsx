@@ -59,6 +59,7 @@ return (
     <main>
       {page === "Home" && <HomePage />}
       {page === "Services" && <ServicesPage />}
+      {page === "About" && <AboutPage />}
     </main>
   </div>
 );
