@@ -5,14 +5,18 @@ const WA_LINK = `https://wa.me/${PHONE}`;
 
 const NAV_LINKS = ["Home", "About", "Services", "Contact"];
 
-function Navbar({ setPage, NAV_LINKS }) {
+function Navbar({ setPage, NAV_LINKS, activePage }) {
   return (
     <nav style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>
       {NAV_LINKS.map(link => (
         <button
           key={link}
           onClick={() => setPage(link)}
-          style={{ padding: "8px 12px", cursor: "pointer" }}
+          style={{
+            padding: "8px 12px",
+            cursor: "pointer",
+            background: activePage === link ? "#ddd" : "#fff"
+          }}
         >
           {link}
         </button>
