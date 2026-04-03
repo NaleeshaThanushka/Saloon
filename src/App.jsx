@@ -48,8 +48,11 @@ function ServicesPage() {
 function AboutPage() {
   return (
     <div>
-      <h1>About Us</h1>
-      <p>We provide premium beauty services in Colombo.</p>
+      <h1>About Lumière Salon</h1>
+      <p>
+        Lumière Salon is dedicated to delivering high-quality beauty services 
+        with a focus on customer satisfaction and style.
+      </p>
     </div>
   );
 }
