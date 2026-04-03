@@ -54,7 +54,8 @@ export default function App() {
 
 return (
   <div style={{ padding: "20px", fontFamily: "Arial" }}>
-    <Navbar setPage={setPage} NAV_LINKS={NAV_LINKS} />
+     <Navbar setPage={setPage} NAV_LINKS={NAV_LINKS} activePage={page} />
+
 
     <main>
       {page === "Home" && <HomePage />}
