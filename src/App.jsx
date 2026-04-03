@@ -47,9 +47,9 @@ function ServicesPage() {
 }
 function AboutPage() {
   return (
-    <div>
+    <div style={{ padding: "20px" }}>
       <h1>About Lumière Salon</h1>
-      <p>
+      <p style={{ lineHeight: "1.6" }}>
         Lumière Salon is dedicated to delivering high-quality beauty services 
         with a focus on customer satisfaction and style.
       </p>
