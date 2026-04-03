@@ -41,7 +41,14 @@ function ServicesPage() {
     </div>
   );
 }
-
+function AboutPage() {
+  return (
+    <div>
+      <h1>About Us</h1>
+      <p>We provide premium beauty services in Colombo.</p>
+    </div>
+  );
+}
 export default function App() {
   const [page, setPage] = useState("Home");
 
