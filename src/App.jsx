@@ -78,6 +78,10 @@ function ContactPage() {
     </div>
   );
 }
+const handleSend = () => {
+  const text = encodeURIComponent(`Hi, I'm ${name}. ${message}`);
+  window.open(`https://wa.me/${PHONE}?text=${text}`, "_blank");
+};
 export default function App() {
   const [page, setPage] = useState("Home");
 
@@ -92,6 +96,7 @@ return (
       {page === "About" && <AboutPage />}
       {page === "Contact" && <ContactPage />}
     </main>
+    <button onClick={handleSend}>Send via WhatsApp</button>
   </div>
 );
 }
