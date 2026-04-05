@@ -57,10 +57,24 @@ function AboutPage() {
   );
 }
 function ContactPage() {
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+
   return (
     <div>
       <h1>Contact Us</h1>
-      <p>Get in touch with us</p>
+
+      <input
+        placeholder="Your Name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+
+      <textarea
+        placeholder="Your Message"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+      />
     </div>
   );
 }
