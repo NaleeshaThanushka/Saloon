@@ -97,6 +97,25 @@ return (
       {page === "Contact" && <ContactPage />}
     </main>
     <button onClick={handleSend}>Send via WhatsApp</button>
+    <div style={{ padding: "20px" }}>
+  <h1>Contact Us</h1>
+
+  <input
+    style={{ display: "block", marginBottom: "10px", padding: "8px" }}
+    placeholder="Your Name"
+    value={name}
+    onChange={(e) => setName(e.target.value)}
+  />
+
+  <textarea
+    style={{ display: "block", marginBottom: "10px", padding: "8px" }}
+    placeholder="Your Message"
+    value={message}
+    onChange={(e) => setMessage(e.target.value)}
+  />
+
+  <button onClick={handleSend}>Send via WhatsApp</button>
+</div>
   </div>
 );
 }
