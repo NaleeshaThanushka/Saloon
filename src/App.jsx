@@ -108,7 +108,7 @@ return (
       {page === "Services" && <ServicesPage />}
       {page === "About" && <AboutPage />}
       {page === "Contact" && <ContactPage />}
-      <Footer />
+      <Footer setPage={setPage} />
     </main>
     <button onClick={handleSend}>Send via WhatsApp</button>
     <div style={{ padding: "20px" }}>
