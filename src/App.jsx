@@ -47,14 +47,25 @@ function ServicesPage() {
 }
 function Footer({ setPage }) {
   return (
-    <footer>
+    <footer style={{
+      marginTop: "40px",
+      padding: "20px",
+      borderTop: "1px solid #ccc",
+      textAlign: "center"
+    }}>
       <p>© 2025 Lumière Salon</p>
 
-      {NAV_LINKS.map(link => (
-        <button key={link} onClick={() => setPage(link)}>
-          {link}
-        </button>
-      ))}
+      <div style={{ marginTop: "10px" }}>
+        {NAV_LINKS.map(link => (
+          <button
+            key={link}
+            onClick={() => setPage(link)}
+            style={{ margin: "5px", padding: "6px 10px" }}
+          >
+            {link}
+          </button>
+        ))}
+      </div>
     </footer>
   );
 }
