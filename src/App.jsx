@@ -70,15 +70,20 @@ function Footer({ setPage }) {
   );
 }
 function AboutPage() {
-  return (
-    <div style={{ padding: "20px" }}>
-      <h1>About Lumière Salon</h1>
-      <p style={{ lineHeight: "1.6" }}>
-        Lumière Salon is dedicated to delivering high-quality beauty services 
-        with a focus on customer satisfaction and style.
-      </p>
-    </div>
-  );
+return (
+  <div style={{ fontFamily: "Arial", minHeight: "100vh" }}>
+    <Navbar setPage={setPage} NAV_LINKS={NAV_LINKS} activePage={page} />
+
+    <main style={{ padding: "20px" }}>
+      {page === "Home" && <HomePage />}
+      {page === "About" && <AboutPage />}
+      {page === "Services" && <ServicesPage />}
+      {page === "Contact" && <ContactPage />}
+    </main>
+
+    <Footer setPage={setPage} />
+  </div>
+);
 }
 function ContactPage() {
   const [name, setName] = useState("");
