@@ -45,6 +45,13 @@ function ServicesPage() {
     </div>
   );
 }
+function Footer() {
+  return (
+    <footer>
+      <p>© 2025 Lumière Salon</p>
+    </footer>
+  );
+}
 function AboutPage() {
   return (
     <div style={{ padding: "20px" }}>
