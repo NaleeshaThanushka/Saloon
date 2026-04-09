@@ -45,10 +45,16 @@ function ServicesPage() {
     </div>
   );
 }
-function Footer() {
+function Footer({ setPage }) {
   return (
     <footer>
       <p>© 2025 Lumière Salon</p>
+
+      {NAV_LINKS.map(link => (
+        <button key={link} onClick={() => setPage(link)}>
+          {link}
+        </button>
+      ))}
     </footer>
   );
 }
